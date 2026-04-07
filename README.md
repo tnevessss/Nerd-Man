@@ -1,115 +1,73 @@
-# 🎮 Nerdman
+# 🎮 NerdMan  
 
-Jogo desenvolvido em **C++** utilizando a biblioteca **SFML**, inspirado no clássico *Pac-Man*.  
-A proposta traz uma abordagem divertida: um estudante nerd deve coletar itens pelo mapa enquanto foge de inimigas que se tornam cada vez mais desafiadoras.
-
----
-
-## 📌 Funcionalidades
-
-### 🖥️ Telas do jogo
-- Menu inicial com opções de **Jogar, Créditos e Sair**
-- Tela de **Game Over** com opção de reiniciar ou voltar ao menu
-- Tela de **Vitória** exibida ao coletar todos os itens
+Um jogo desenvolvido em **C++** utilizando a biblioteca **SFML**, inspirado no clássico Pac-Man, mas com uma proposta divertida: um menino nerd precisa fugir de quatro meninas enquanto coleta itens espalhados pelo mapa.  
 
 ---
 
-### 🎨 Elementos visuais
-- Personagem principal: estudante nerd
-- Inimigos: quatro personagens com diferenciação visual
-- Ícone personalizado exibido na janela do jogo
+## 📌 Funcionalidades  
+
+- **Telas de interação**
+  - Menu inicial com opções de **Jogar**, **Créditos** e **Sair**  
+  - Tela de **Game Over** com opção de jogar novamente ou voltar ao menu  
+  - Tela de **Vitória** exibida após coletar todos os itens  
+
+- **Sprites**
+  - Personagem principal: um menino nerd de óculos  
+  - Inimigos: quatro meninas com cores de cabelo distintas  
+  - Ícone próprio do jogo exibido na janela e na barra de tarefas  
+
+- **Portais**
+  - Portais coloridos que transportam o jogador para diferentes partes do mapa  
+  - Implementação com **cooldown de 0.4 segundos** para evitar loops de teletransporte  
+
+- **Coletáveis**
+  - Itens: lápis, borracha, livro, régua e óculos  
+  - Ordem aleatória em cada partida  
+  - Barra de score exibindo os itens coletados  
+  - Quanto mais itens coletados, maior a dificuldade (inimigos passam a perseguir o jogador e ficam mais rápidos)  
+
+- **Música e efeitos sonoros**
+  - Música de fundo durante a partida  
+  - Efeitos sonoros para coleta de itens, vitória e captura pelo inimigo  
+
+- **Movimentação dos inimigos**
+  - Movimentação **aleatória** com a função `mover_vilao_aleatorio()`  
+  - Movimentação **inteligente** (perseguição) com algoritmo de **busca em largura (BFS)**  
+  - Prevenção de sobreposição de inimigos com a função `pos_ocupada()`  
 
 ---
 
-### 🌀 Sistema de portais
-- Portais que transportam o jogador entre regiões do mapa
-- Implementação com **controle de cooldown** para evitar teletransporte contínuo
+## 🚀 Tecnologias Utilizadas  
+
+- **Linguagem:** C++  
+- **Biblioteca gráfica:** [SFML](https://www.sfml-dev.org/)  
+- **Algoritmos:**  
+  - Busca em largura (BFS) para perseguição  
+  - Randomização para posicionamento e ordem dos coletáveis  
 
 ---
 
-### 🎯 Sistema de coletáveis
-- Itens: lápis, borracha, livro, régua e óculos
-- Ordem de coleta **aleatória a cada partida**
-- Sistema de pontuação baseado nos itens coletados
-- **Escalonamento de dificuldade**:
-  - Inimigos passam a perseguir o jogador
-  - Aumento progressivo de velocidade
+## 🎯 Como Jogar  
+
+1. Inicie o jogo pelo menu inicial.  
+2. Mova o personagem para coletar os 5 itens espalhados pelo mapa.  
+3. Use os **portais** estrategicamente para fugir dos inimigos.  
+4. Se todos os itens forem coletados → 🎉 Você vence!  
+5. Se for capturado → 💔 Tela de Game Over.  
 
 ---
 
-### 🔊 Áudio
-- Música de fundo durante a gameplay
-- Efeitos sonoros para:
-  - Coleta de itens
-  - Vitória
-  - Captura pelo inimigo
+## ⚙️ Compilação e Execução  
 
----
-
-### 🤖 Inteligência dos inimigos
-- Movimentação aleatória inicial
-- Sistema de perseguição utilizando **Busca em Largura (BFS)**
-- Controle de colisão para evitar sobreposição entre inimigos
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- **C++**
-- **SFML (Simple and Fast Multimedia Library)**
-
-### 🧠 Conceitos aplicados:
-- Algoritmos de busca (**BFS**)
-- Estruturas de dados
-- Controle de estado do jogo
-- Randomização
-- Lógica de colisão
-
-## 👨‍💻 Minha contribuição
-
-- implementação da lógica de movimentação e sistema de colisão
-- desenvolvimento do sistema de coletáveis e pontuação
-
-- definição da identidade visual do jogo
-  - criação dos personagens
-  - desenvolvimento dos coletáveis
-  - elaboração das telas de interação (menu, vitória e game over)
-
-- desenvolvimento da interação usuário–programa
-  - implementação da navegação por botões
-  - controle de transições entre telas (menu, jogo, vitória e game over)
-  - organização do fluxo de interação do usuário
-
-- implementação dos elementos sonoros
-  - adição de música de fundo durante a gameplay
-  - efeitos sonoros para coleta de itens
-  - efeitos para colisão/interação entre personagens
-  - sons de vitória e derrota
-
----
-
-## 🎮 Como Jogar
-
-1. Inicie o jogo pelo menu principal  
-2. Explore o mapa coletando os itens  
-3. Utilize os portais estrategicamente  
-4. Evite os inimigos  
-
-- ✔ Coletou todos os itens → **Vitória**
-- ❌ Foi capturado → **Game Over**
-
----
-
-## ⚙️ Execução
-
+Clone o repositório:  
 ```bash
-git clone https://github.com/seu-usuario/nerdman
-cd nerdman
+git clone https://github.com/seu-usuario/nerd-escape.git
+cd nerd-escape
 
 👥 Créditos
 
 Projeto desenvolvido para a disciplina INF 110, com colaboração de:
 
-Thales Rodrigues Neves
 Luiz Filipe Santos Oliveira
 Paulo Henrique de Souza Castro
+Thales Rodrigues Neves
