@@ -84,3 +84,11 @@ A proposta traz uma abordagem divertida: um estudante nerd deve coletar itens pe
 ```bash
 git clone https://github.com/seu-usuario/nerdman
 cd nerdman
+
+👥 Créditos
+
+Projeto desenvolvido para a disciplina INF 110, com colaboração de:
+
+Thales Rodrigues Neves
+Luiz Filipe Santos Oliveira
+Paulo Henrique de Souza Castro
