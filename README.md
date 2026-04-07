@@ -67,20 +67,20 @@ A proposta traz uma abordagem divertida: um estudante nerd deve coletar itens pe
 
 ## 👨‍💻 Minha contribuição
 
-- feat: implementação da lógica de movimentação e sistema de colisão
-- feat: desenvolvimento do sistema de coletáveis e pontuação
+- implementação da lógica de movimentação e sistema de colisão
+- desenvolvimento do sistema de coletáveis e pontuação
 
-- design: definição da identidade visual do jogo
+- definição da identidade visual do jogo
   - criação dos personagens
   - desenvolvimento dos coletáveis
   - elaboração das telas de interação (menu, vitória e game over)
 
-- ux: desenvolvimento da interação usuário–programa
+- desenvolvimento da interação usuário–programa
   - implementação da navegação por botões
   - controle de transições entre telas (menu, jogo, vitória e game over)
   - organização do fluxo de interação do usuário
 
-- audio: implementação dos elementos sonoros
+- implementação dos elementos sonoros
   - adição de música de fundo durante a gameplay
   - efeitos sonoros para coleta de itens
   - efeitos para colisão/interação entre personagens
